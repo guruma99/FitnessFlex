@@ -29,7 +29,7 @@
 
 .flex-item {
   width: 350px;
-  flex-grow: 1;
+  flex: 1;
   transition: all 400ms ease-in-out;
 }
 
@@ -44,7 +44,7 @@
 }
 
 .flex-item:hover {
-  flex-grow: 5;
+  flex-grow: 2.5;
   /* border: 1px solid red; */
 }
 
@@ -82,14 +82,14 @@
 #text-item2 {
   position: absolute;
   top: 15%;
-  left: 30.5%;
+  left: 24.5%;
   z-index: 500;
 }
 
 #text-item3 {
   position: absolute;
   top: 15%;
-  left: 59.5%;
+  left: 47%;
 }
 
 button {
