@@ -10,7 +10,7 @@
 }
 
 .flex-box {
-  position: absolute;
+  position: relative;
   width: 1400px;
   top: 50%;
   left: 50%;
@@ -48,43 +48,48 @@
   /* border: 1px solid red; */
 }
 
-.flex-item:hover .text-item {
+
+.flex-item:hover h2 {
+  text-align: left;
+  padding-left: 30px;
+}
+
+.flex-item:hover #text-item1,
+.flex-item:hover #text-item2,
+.flex-item:hover #text-item3 {
   display: block;
 }
 
-/* .text {
-  display: flex;
-  text-align: left;
-  border: 1px solid black;
-} */
-
-.text-item {
+#text-item1,
+#text-item2,
+#text-item3 {  
   display: none;
   text-align: left;
   width: 300px;
+  color: #fff;
+  z-index: 500;
 }
 
-.text-item:nth-child(1) {
+#text-item1 {
   position: absolute;
   top: 15%;
   left: 30px;
   color: #fff;
+  z-index: 500;
+ 
 }
 
-.text-item:nth-child(2) {
+#text-item2 {
   position: absolute;
   top: 15%;
-  left: 30%;
-
-  color: #fff;
+  left: 30.5%;
+  z-index: 500;
 }
 
-.text-item:nth-child(3) {
+#text-item3 {
   position: absolute;
   top: 15%;
-  left: 60%;
-
-  color: #fff;
+  left: 59.5%;
 }
 
 button {
@@ -95,3 +100,4 @@ button {
   margin-top: 30px;
   padding: 10px 20px;
 }
+
